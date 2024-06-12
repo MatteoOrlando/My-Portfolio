@@ -1,6 +1,11 @@
 .footer {
-  background-color: #282c34;
-  color: white;
+  border: 1px outset #79797950;
+  background: linear-gradient(
+    to bottom,
+    rgba(4, 13, 20, 0.907),
+    rgba(5, 17, 26, 0.918)
+  );
+  color: rgba(255, 255, 255, 0.928);
   text-align: center;
   padding: 20px;
   position: relative;
