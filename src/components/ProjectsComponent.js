@@ -7,7 +7,8 @@ function Projects() {
         <p>Descrizione del progetto...</p>
         <a href="link_to_project">Vedi Progetto</a>
       </div>
-      // Ripeti per altri progetti
+      altri progetti
     </div>
   );
 }
+export default Projects;

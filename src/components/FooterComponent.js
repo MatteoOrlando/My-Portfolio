@@ -1,39 +1,41 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+import '../assets/Footer.css';
 
-function NavBar() {
+function Footer() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Mio Portfolio
-        </Link>
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                Chi Sono
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/skills">
-                Competenze
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/projects">
-                Progetti
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contatti
-              </Link>
-            </li>
-          </ul>
-        </div>
+    <footer className="footer">
+      <div className="social-media">
+        <a
+          href="https://linkedin.com/in/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+        <a
+          href="https://github.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+        </a>
+        <a
+          href="https://twitter.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faTwitter} size="2x" />
+        </a>
       </div>
-    </nav>
+      <p>© 2024 [Il Tuo Nome]. Tutti i diritti riservati.</p>
+    </footer>
   );
 }
 
-export default NavBar;
+export default Footer;
