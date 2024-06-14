@@ -7,7 +7,6 @@ import {
   faLeaf,
   faFlask,
   faLightbulb,
-  faHandPeace,
   faProjectDiagram,
   faStar,
 } from '@fortawesome/free-solid-svg-icons';
@@ -29,7 +28,6 @@ function Home() {
       <section className="intro-section">
         <video autoPlay muted loop id="bg-video">
           <source src={backgroundVideo} type="video/mp4" />
-          Your browser does not support HTML5 video.
         </video>
         <img
           src={profilePhoto}
@@ -182,7 +180,7 @@ function Home() {
                 </div>
                 <div class="animated-border">
                   <div className="project-card-2">
-                    <span className="info-prj">
+                    <span className="info-prj-2">
                       <h3>
                         <FontAwesomeIcon icon={faStar} className="star" />
                         Netflix
