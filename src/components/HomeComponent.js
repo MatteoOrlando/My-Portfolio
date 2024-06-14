@@ -20,7 +20,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import '../assets/Home.css';
-import profilePhoto from '../assets/Img/27828.jpg';
+import profilePhoto from '../assets/Img/27828-removebg-preview.png';
 import backgroundVideo from '../assets/Img/3129671-uhd_3840_2160_30fps.mp4';
 
 function Home() {
@@ -54,11 +54,12 @@ function Home() {
             da quello del conding e dello sviluppo, ho deciso di fare una svolta
             coraggiosa. <br />
             Decidendo di investire significativamente nella mia formazione,
-            questo percorso mi ha portato a completare un intensivo bootcamp di
-            sei mesi presso una nota e-school specializzata nel settore.
+            questo percorso mi ha portato a completare un intensivo bootcamp
+            della durata di sei mesi presso una nota e-school specializzata nel
+            settore.
             <br />
             Questo mi ha permesso di immergermi a capofitto nel mondo dello
-            sviluppo.
+            sviluppo e apprezzarne fortemente le potenzialitá.
             <br />
             Sono motivato ad imparare ogni giorno e ad affrontare con entusiasmo
             le sfide che mi attendono, sperando di unirmi a team dai quali posso
@@ -169,28 +170,26 @@ function Home() {
                 <FontAwesomeIcon icon={faProjectDiagram} /> Last Projects
               </h2>
               <div className="projects-container">
-                <span className="Prj-1">
+                <div class="animated-border">
                   <div className="project-card">
                     <span className="info-prj">
                       <h3>
                         <FontAwesomeIcon icon={faStar} className="star" />
                         Capstone Project
                       </h3>
-                      <p></p>
                     </span>
                   </div>
-                </span>
-                <span className="Prj-2">
+                </div>
+                <div class="animated-border">
                   <div className="project-card-2">
                     <span className="info-prj">
                       <h3>
                         <FontAwesomeIcon icon={faStar} className="star" />
                         Netflix
                       </h3>
-                      <p></p>
                     </span>
                   </div>
-                </span>
+                </div>
               </div>
             </section>
           </div>
