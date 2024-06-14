@@ -9,16 +9,17 @@
 }
 
 .navbar {
-  height: 65px;
+  height: 70px;
   width: 100%;
   margin: 0;
-  background: linear-gradient(to bottom, #202429, rgb(24, 26, 31));
-  border-bottom: 1px inset #000000a3;
+  background: linear-gradient(to bottom, #202429fe, rgba(24, 26, 31, 0.256));
+  border-bottom: 2px inset #000000a3;
   box-shadow: 0 3px 15px #180701d8;
 }
 
 .navbar-nav {
-  margin-left: auto;
+  margin: auto;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,14 +60,15 @@
 
 .nav-icon-home {
   font-size: 45px;
-  margin-right: 145px;
+  margin-right: 100px;
   padding-left: 105px;
 }
 
 .navbar-nav .nav-link {
   font-family: monospace;
   display: flex;
-  margin-right: 30px;
+  margin-right: 20px;
+
   text-decoration: none;
   color: #ffffffd6;
   font-size: 20px;
@@ -110,8 +112,8 @@
 }
 
 .btn-outline:hover {
-  background-color: #0e3452;
-  color: #fff;
+  background-color: #f5f5f5;
+  color: #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }

@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
 import NavBar from './components/NavbarComponent';
 import HomeComponent from './components/HomeComponent';
 import SkillsComponent from './components/SkillsComponent';
@@ -24,6 +29,7 @@ function AppRoutes() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<HomeComponent />} />
         <Route path="/skills" element={<SkillsComponent />} />
         <Route path="/projects" element={<ProjectsComponent />} />

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
-  faTwitter,
+  faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import '../assets/Footer.css';
 
@@ -11,29 +11,41 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="social-media">
-        <a
-          href="https://linkedin.com/in/yourprofile"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
-        </a>
+        <span className="bg-white-lnkd">
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fa-linkedin"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="3x" />
+          </a>
+        </span>
         <a
           href="https://github.com/yourusername"
           target="_blank"
           rel="noopener noreferrer"
+          className="fa-github"
         >
-          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <FontAwesomeIcon icon={faGithub} size="3x" />
         </a>
-        <a
-          href="https://twitter.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faTwitter} size="2x" />
-        </a>
+        <span className="bg-white-yt">
+          <a
+            href="https://twitter.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fa-twitter"
+          >
+            <FontAwesomeIcon icon={faYoutube} size="3x" />
+          </a>
+        </span>
       </div>
-      <p>© 2024 [Il Tuo Nome]. Tutti i diritti riservati.</p>
+      <p>
+        <em>
+          <strong>&copy; 2023-{new Date().getFullYear()} </strong>Matteo
+          Orlando. Tutti i diritti riservati.
+        </em>
+      </p>
     </footer>
   );
 }
