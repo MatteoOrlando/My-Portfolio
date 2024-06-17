@@ -1,7 +1,7 @@
 .home-container {
   filter: blur(0.3px);
   color: #ffffffef;
-  background: linear-gradient(to bottom, #202328, rgb(92, 100, 118));
+  background: linear-gradient(to bottom, #1c1f25, rgb(68, 75, 91));
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -43,7 +43,7 @@
     color: rgba(255, 255, 255, 0.677);
   }
   50% {
-    color: #daae6c;
+    color: #dcae69;
   }
   100% {
     color: rgba(255, 255, 255, 0.674);
@@ -54,7 +54,7 @@
   font-family: Kanit;
   font-weight: 500;
   font-size: 22px;
-  letter-spacing: 2.4px;
+  letter-spacing: 2px;
   line-height: inherit;
   color: rgba(255, 255, 255, 0.979);
 }
@@ -62,7 +62,6 @@
 .intro-text p {
   margin-top: 20px;
   padding-right: 20px;
-
   text-align: start;
 }
 
@@ -367,13 +366,13 @@ box-border::after {
     border-color: #21242a;
   }
   25% {
-    border-color: #627ce5e5;
+    border-color: #daae6cbb;
   }
   50% {
     border-color: #2f4050;
   }
   75% {
-    border-color: #f3ac3acb;
+    border-color: #daae6cdb;
   }
   100% {
     border-color: #212429;

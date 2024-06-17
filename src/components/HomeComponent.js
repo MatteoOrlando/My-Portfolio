@@ -6,6 +6,7 @@ import {
   faDatabase,
   faLeaf,
   faFlask,
+  faCogs,
   faLightbulb,
   faProjectDiagram,
   faStar,
@@ -54,15 +55,13 @@ function Home() {
             Decidendo di investire significativamente nella mia formazione,
             questo percorso mi ha portato a completare un intensivo bootcamp
             della durata di sei mesi presso una nota e-school specializzata nel
-            settore.
-            <br />
-            Questo mi ha permesso di immergermi a capofitto nel mondo dello
-            sviluppo e apprezzarne fortemente le potenzialitá.
+            settore, e questo mi ha permesso di immergermi a capofitto nel mondo
+            dello sviluppo e apprezzarne fortemente gli aspetti e le
+            potenzialitá.
             <br />
             Sono motivato ad imparare ogni giorno e ad affrontare con entusiasmo
             le sfide che mi attendono, sperando di unirmi a team dai quali posso
-            continuare a crescere e dove posso contribuire al successo dei
-            progetti.
+            continuare ad assorbire e crescere, e dare il mio contributo.
           </p>
         </div>
       </section>
@@ -71,7 +70,7 @@ function Home() {
           <div className="col-md-4">
             <section className="skills-highlights">
               <h2 className="H2-skill">
-                <FontAwesomeIcon icon={faLightbulb} /> Competenze Principali
+                <FontAwesomeIcon icon={faCogs} /> Competenze Principali
               </h2>
               <Carousel
                 className="carosello-home"

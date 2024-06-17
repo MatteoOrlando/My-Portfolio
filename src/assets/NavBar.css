@@ -13,13 +13,13 @@
   width: 100%;
   margin: 0;
   background: linear-gradient(to bottom, #202429fe, rgba(24, 26, 31, 0.256));
-  border-bottom: 2px inset #000000a3;
+  border-bottom: 2px inset #daae6caf;
   box-shadow: 0 3px 15px #180701d8;
 }
 
 .navbar-nav {
-  margin: auto;
-
+  margin-right: 5%;
+  margin-left: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
