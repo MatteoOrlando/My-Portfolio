@@ -54,10 +54,18 @@
   border-radius: 30px;
 }
 
-.project-card {
-  height: 300px;
-  background-size: cover;
-  background-position: center;
+.project-page-card {
+  position: relative;
+  right: 1%;
+  margin-bottom: 20px;
+  height: 265px;
+  border-radius: 25px;
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .project-info {

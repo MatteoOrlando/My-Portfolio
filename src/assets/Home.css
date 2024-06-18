@@ -289,7 +289,6 @@ box-border::after {
 .project-card {
   position: relative;
   right: 1%;
-
   margin-bottom: 20px;
   height: 265px;
   border-radius: 25px;
