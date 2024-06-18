@@ -1,8 +1,74 @@
 .projects-page-container {
   width: 100%;
+  height: 1000px;
   padding: 100px;
   background: linear-gradient(to bottom, #1c1f25, rgb(68, 75, 91));
   color: #ffffffef;
+}
+
+.project-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-icon {
+  width: 100px;
+  margin-right: 10px;
+  transform: rotate(25deg);
+  margin-left: 15px;
+}
+
+.prj-title {
+  text-shadow: -1px -1px 0 #00000078, 1px -1px 0 #0000008a, -1px 1px 0 #0000004b,
+    1px 1px 0 #0000007e;
+  color: #ededede8;
+  font-family: kanit;
+  margin-top: 15px;
+  display: flex;
+}
+
+.project-page-card {
+  margin-bottom: 20px;
+  height: 600px;
+  border-radius: 25px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: #00000092;
+}
+
+.project-carousel-container {
+  height: 600px;
+  position: relative;
+  margin: 40px auto;
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+.project-info {
+  font-family: kanit;
+  font-weight: 500;
+  border: solid 3px #1b1f24cc;
+  position: absolute;
+  z-index: 10;
+  bottom: 0.1px;
+  background: rgba(0, 0, 0, 0.846);
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(42%);
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  line-height: normal;
 }
 
 .project-technologies {
@@ -11,16 +77,45 @@
   margin-top: 20px;
 }
 
+.carousel .carousel-item {
+  max-height: 800px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #e6b771;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -20px;
+  width: 70%;
+  font-size: 30px;
+  z-index: 15;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #16191b;
+  height: 12.5px;
+  border: solid 2px #8595b5;
+  border-radius: 15px;
+  width: 4%;
+}
+.carousel-indicators .active {
+  border: solid 2px #212528d4;
+  background-color: #daae6caf;
+}
+
 .tech-icon {
   display: flex;
   align-items: center;
   margin-top: 40px;
   margin-right: 40px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .github-icon {
-  margin-left: 70px;
+  margin-left: 30px;
   font-size: 4rem;
   color: #ffffffeb;
 }
@@ -28,75 +123,22 @@
 .github-icon:hover {
   color: #fff;
 }
+
 .pulse {
-  animation: pulse-animation 3s infinite;
+  animation: pulse-animation 3.5s infinite;
 }
 
 @keyframes pulse-animation {
   0% {
-    transform: scale(1);
+    transform: scale(0.8);
     opacity: 0.5;
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1);
     opacity: 0.9;
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.8);
     opacity: 0.5;
   }
-}
-
-.project-carousel-container {
-  position: relative;
-  margin: 40px auto;
-  max-width: 80%;
-  border-radius: 30px;
-}
-
-.project-page-card {
-  position: relative;
-  right: 1%;
-  margin-bottom: 20px;
-  height: 265px;
-  border-radius: 25px;
-  background-size: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding: 20px;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
-  width: 100%;
-}
-
-.project-info {
-  position: absolute;
-  z-index: 10;
-  bottom: 20px;
-  left: 25%;
-  background: rgba(0, 0, 0, 0.674);
-  padding: 20px;
-  border-radius: 10px;
-  width: calc(53.5%);
-}
-
-.project-info h3 {
-  margin-bottom: 10px;
-}
-
-.project-info p {
-  font-size: 20px;
-  line-height: normal;
-}
-
-.carousel .carousel-item {
-  height: 300px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  color: #fff;
-}
-
-.carousel-indicators [data-bs-target] {
-  background-color: #fff;
 }

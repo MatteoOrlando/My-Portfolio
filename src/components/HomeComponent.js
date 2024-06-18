@@ -182,7 +182,7 @@ function Home() {
                     <span className="info-prj-2">
                       <h3>
                         <FontAwesomeIcon icon={faStar} className="star" />
-                        Netflix
+                        Spotify Clone
                       </h3>
                     </span>
                   </div>

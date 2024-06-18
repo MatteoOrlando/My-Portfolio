@@ -2,11 +2,16 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
 import { SiSpring, SiPostgresql } from 'react-icons/si';
-import image1 from '../assets/Img/img-project-1.png';
-import image2 from '../assets/Img/test-img.png';
-import image3 from '../assets/Img/Immagine catalogo.png';
-import image4 from '../assets/Img/Immagine dettagli prodotto.png';
-import image5 from '../assets/Img/Immagine cart.png';
+import projectIcon from '../assets/Img/icona-prj-2.webp';
+import image1 from '../assets/screen ok/CAPSTONE/screen-home.png';
+import image2 from '../assets/screen ok/CAPSTONE/screen-sub-home.png';
+import image3 from '../assets/screen ok/CAPSTONE/screen-login.png';
+import image4 from '../assets/screen ok/CAPSTONE/screen-register.png';
+import image5 from '../assets/screen ok/CAPSTONE/screen-catalogo.png';
+import image6 from '../assets/screen ok/CAPSTONE/screen-detail.png';
+import image7 from '../assets/screen ok/CAPSTONE/screen-cart-top.png';
+import image8 from '../assets/screen ok/CAPSTONE/screen-sub-cart.png';
+import image9 from '../assets/screen ok/CAPSTONE/screen-assistenza.png';
 import '../assets/Project.css';
 
 function ProjectsComponent() {
@@ -14,29 +19,41 @@ function ProjectsComponent() {
     {
       title: 'Capstone Boot Camp',
       description:
-        'Game Portal: mini e-commerce con sistema di login/carrello e gestione admin utilizzando Spring Security.',
-      images: [image1, image2, image3, image4, image5],
+        'Game Portal: mini e-commerce con sistema di login/carrello e gestione admin utilizzando Spring Framework/Security.',
+      images: [
+        image1,
+        image2,
+        image3,
+        image4,
+        image5,
+        image6,
+        image7,
+        image8,
+        image9,
+      ],
       technologies: [
         {
           icon: <FaReact style={{ color: '#61DAFB', marginRight: '5px' }} />,
-          name: ' React',
+          name: <span style={{ fontStyle: 'italic' }}>React</span>,
         },
         {
           icon: <FaNodeJs style={{ color: '#339933', marginRight: '5px' }} />,
-          name: ' Node.js',
+          name: <span style={{ fontStyle: 'italic' }}>Node.js</span>,
         },
         {
           icon: <SiSpring style={{ color: '#6DB33F', marginRight: '5px' }} />,
-          name: ' Spring',
+          name: <span style={{ fontStyle: 'italic' }}>Spring</span>,
         },
         {
           icon: (
             <SiPostgresql style={{ color: '#336791', marginRight: '5px' }} />
           ),
-          name: 'PostgreSQL',
+          name: <span style={{ fontStyle: 'italic' }}>PostgreSQL</span>,
         },
       ],
-      repoUrl: 'https://github.com/yourusername/capstone-project',
+
+      repoUrl:
+        'https://github.com/MatteoOrlando/game-ecommerce/blob/master/src/CAPSTONE-README.md',
     },
 
     // Altri progetti qui
@@ -44,6 +61,10 @@ function ProjectsComponent() {
 
   return (
     <div className="projects-page-container">
+      <span className="project-title-container">
+        <img src={projectIcon} alt="Project Icon" className="project-icon" />
+        <h1 className="prj-title">Projects</h1>
+      </span>
       {projects.map((project, idx) => (
         <div key={idx} className="project-carousel-container">
           <div className="project-info">

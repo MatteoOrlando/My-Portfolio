@@ -112,7 +112,7 @@
 .H2-skill {
   text-shadow: -1px -1px 0 #00000078, 1px -1px 0 #0000008a, -1px 1px 0 #0000004b,
     1px 1px 0 #0000007e;
-  color: #1a1d21;
+  color: #ededede8;
   font-family: kanit;
   font-weight: 300;
   margin-top: 23px;
@@ -223,7 +223,7 @@
 .H2-project {
   text-shadow: -1px -1px 0 #00000078, 1px -1px 0 #0000008a, -1px 1px 0 #0000004b,
     1px 1px 0 #0000007e;
-  color: #1a1d21;
+  color: #ededede8;
   font-family: kanit;
   font-weight: 300;
   padding-left: 30%;
