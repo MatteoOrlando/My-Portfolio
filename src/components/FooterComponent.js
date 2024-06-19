@@ -13,7 +13,7 @@ function Footer() {
       <div className="social-media">
         <span className="bg-white-lnkd">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/matteo-orlando-571422299/"
             target="_blank"
             rel="noopener noreferrer"
             className="fa-linkedin"
@@ -22,7 +22,7 @@ function Footer() {
           </a>
         </span>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/MatteoOrlando"
           target="_blank"
           rel="noopener noreferrer"
           className="fa-github"
@@ -31,10 +31,9 @@ function Footer() {
         </a>
         <span className="bg-white-yt">
           <a
-            href="https://twitter.com/yourusername"
+            href="https://www.youtube.com/watch?v=z2Lv98vh9Og&list=PLImOe1x9FLM2cz53FQ92CQqPUQ0g7UUAF&index=9"
             target="_blank"
             rel="noopener noreferrer"
-            className="fa-twitter"
           >
             <FontAwesomeIcon icon={faYoutube} size="3x" />
           </a>

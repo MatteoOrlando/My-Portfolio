@@ -1,6 +1,6 @@
 .projects-page-container {
   width: 100%;
-  height: 1000px;
+  height: 100%;
   padding: 100px;
   background: linear-gradient(to bottom, #1c1f25, rgb(68, 75, 91));
   color: #ffffffef;
@@ -12,7 +12,7 @@
 }
 
 .project-icon {
-  width: 100px;
+  width: 70px;
   margin-right: 10px;
   transform: rotate(25deg);
   margin-left: 15px;
@@ -28,7 +28,7 @@
 }
 
 .project-page-card {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   height: 600px;
   border-radius: 25px;
   background-size: contain;
@@ -38,14 +38,51 @@
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
   width: 100%;
   background-color: #00000092;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.project-page-card:hover {
+  transform: scale(1.02);
+  background-color: rgba(15, 16, 21, 0.975);
 }
 
 .project-carousel-container {
   height: 600px;
   position: relative;
-  margin: 40px auto;
+  margin: 20px auto 120px;
   max-width: 100%;
   border-radius: 30px;
+}
+
+.carousel .carousel-item {
+  max-height: 800px;
+  transition: transform 1.5s ease;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #e6b771;
+}
+
+.carousel-indicators {
+  margin-bottom: -15px;
+  position: absolute;
+  width: 70%;
+  font-size: 30px;
+  z-index: 15;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #16191b;
+  height: 12.5px;
+  border: solid 2px #8595b5;
+  border-radius: 15px;
+  width: 4%;
+}
+
+.carousel-indicators .active {
+  border: solid 2px #212528d4;
+  background-color: #eabb74c6;
 }
 
 .project-info {
@@ -75,35 +112,6 @@
   display: flex;
   align-items: center;
   margin-top: 20px;
-}
-
-.carousel .carousel-item {
-  max-height: 800px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  color: #e6b771;
-}
-
-.carousel-indicators {
-  position: absolute;
-  bottom: -20px;
-  width: 70%;
-  font-size: 30px;
-  z-index: 15;
-}
-
-.carousel-indicators [data-bs-target] {
-  background-color: #16191b;
-  height: 12.5px;
-  border: solid 2px #8595b5;
-  border-radius: 15px;
-  width: 4%;
-}
-.carousel-indicators .active {
-  border: solid 2px #212528d4;
-  background-color: #daae6caf;
 }
 
 .tech-icon {
@@ -141,4 +149,12 @@
     transform: scale(0.8);
     opacity: 0.5;
   }
+}
+
+.carousel-break-line {
+  height: 2px;
+  background: linear-gradient(to right, #f6ae43, #eabb7400);
+  border: none;
+  margin: 40px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }

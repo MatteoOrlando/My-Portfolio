@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLaptopCode,
-  faUser,
   faEnvelope,
   faTools,
   faBars,
@@ -38,30 +37,11 @@ function NavBarComponent() {
                 <Link className="nav-link" to="/home">
                   <FontAwesomeIcon icon={faHome} className="nav-icon-home" />
                 </Link>
-              </li>
+              </li>{' '}
               <li className="nav-item">
                 <Link className="nav-link" to="/projects">
                   <FontAwesomeIcon icon={faLaptopCode} className="nav-icon" />
                   <strong>Progetti</strong>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/skills">
-                  <FontAwesomeIcon icon={faTools} className="nav-icon" />
-                  <strong>Competenze</strong>
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  <FontAwesomeIcon icon={faEnvelope} className="nav-icon" />
-                  <strong>Contatti</strong>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about-me">
-                  <FontAwesomeIcon icon={faUser} className="nav-icon" />
-                  <strong>About Me</strong>
                 </Link>
               </li>
             </ul>
