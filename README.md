@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Portfolio di Matteo Orlando
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Benvenuto nel mio portfolio! Questo progetto, in continua evoluzione, raccoglie i miei lavori e le mie competenze principali come Junior Full Stack Developer. Qui potrai esplorare i miei progetti, le mie esperienze e conoscere meglio il mio percorso didattico e professionale.
 
-## Available Scripts
+## 🌟 Descrizione
 
-In the project directory, you can run:
+Il mio portfolio è stato sviluppato utilizzando le seguenti tecnologie:
 
-### `npm start`
+- **⚛️ React**
+- **🎨 Bootstrap**
+- **📝 JavaScript**
+- **🌐 HTML5**
+- **💅 CSS3**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔍 Funzionalità principali
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **📁 Progetti:** Esplora i miei progetti recenti con descrizioni dettagliate e immagini.
+- **🛠️ Competenze:** Scopri le mie competenze principali e le tecnologie che utilizzo.
+- **📞 Contatti:** Trova il modo di contattarmi e collegamenti ai miei profili social.
 
-### `npm test`
+## 🛠️ Come avviare il progetto in locale
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Segui questi semplici passaggi per avviare il mio portfolio in locale:
 
-### `npm run build`
+### 1. 📥 Scarica la repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Scarica la repository dal mio profilo GitHub sotto forma di file ZIP.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. 📂 Estrai i file
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Estrai i file dal file ZIP scaricato in una directory di tua scelta.
 
-### `npm run eject`
+### 3. 💻 Apri il terminale
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Apri Git Bash o un'altra console a tua scelta.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. 📂 Naviga nella directory del progetto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Utilizza il comando `cd` per navigare nella directory in cui hai estratto i file del progetto.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. 📦 Installa le dipendenze
 
-## Learn More
+Installa tutte le dipendenze necessarie utilizzando npm.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6. 🚀 Avvia l'applicazione
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Avvia l'applicazione utilizzando il comando npm start.
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 7. 📞 Contatti
 
-### Analyzing the Bundle Size
+Se hai domande o vuoi metterti in contatto con me, puoi trovarmi su:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+LinkedIn --> https://www.linkedin.com/in/matteo-orlando-571422299/
+GitHub ---> https://github.com/MatteoOrlando
+Email ---> mat.orlando88@gmail.com
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Grazie per aver visitato il mio portfolio! 🙏

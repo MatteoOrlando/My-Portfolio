@@ -25,11 +25,29 @@
   width: 230px;
   border-radius: 10px;
   border: 4px solid transparent;
-  border-image: linear-gradient(45deg, #79603bc7, #f3c177e4) 1;
   margin-right: 60px;
   margin-bottom: 50px;
   transform: scale(1.4);
   transform-origin: center;
+  animation: borderColorShift 8s infinite linear;
+}
+
+@keyframes borderColorShift {
+  0% {
+    border-color: #82673fc7;
+  }
+  25% {
+    border-color: #f3c177c0;
+  }
+  50% {
+    border-color: #82673fc7;
+  }
+  75% {
+    border-color: #f3c177e7;
+  }
+  100% {
+    border-color: #82673fc7;
+  }
 }
 
 .animated-icon {
@@ -232,60 +250,6 @@
 
 /*-----------------------------------------*/
 
-/*.box-border {
-  position: relative;
-  width: 1000px;
-  height: 400px;
-  background: repeating-conic-gradient(
-    from var(--a),
-    #ff2770 0%,
-    #ff2770 5%,
-    trasparent 5%,
-    trasparent 40%,
-    #ff2770 50%
-  );
-  animation: animate 4s linear infinite;
-}
-@property --a {
-  syntax: '<angle';
-  inerits: false;
-  initial-value: 0;
-}
-@keyframes animate {
-  0% {
-    --a: 0deg;
-  }
-  100% {
-    --a: 360deg;
-  }
-}
-box-border::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: repeating-conic-gradient(
-    from var(--a),
-    #ff2770 0%,
-    #ff2770 5%,
-    trasparent 5%,
-    trasparent 40%,
-    #ff2770 50%
-  );
-  animation: animate 4s linear infinite;
-  animation-delay: -1s;
-  border-radius: 20px;
-}
-box-border::after {
-  content: '';
-  position: absolute;
-  inset: 8px;
-  border-radius: 15px;
-  border: 8px solid rgba(0, 0, 0, 0.471);
-}*/
-
-/*------------------------------------*/
-
 .project-card {
   position: relative;
   right: 1%;
@@ -356,7 +320,7 @@ box-border::after {
   right: 5%;
   width: 450px;
   height: 275px;
-  border: solid 5px #1a1d21;
+  border: solid 4px #1a1d21;
   animation: border-animation 8s infinite linear;
 }
 

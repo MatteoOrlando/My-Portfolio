@@ -11,6 +11,55 @@
   align-items: center;
 }
 
+.bg-white-yt {
+  bottom: 17%;
+  left: 86%;
+  position: absolute;
+  z-index: 1000;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(50%, -55%);
+}
+
+.fa-youtube {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  position: relative;
+  z-index: 1001;
+  color: #ff0000;
+  bottom: 16.5px;
+  right: 12.5px;
+}
+
+.bg-white-yt:hover .fa-youtube {
+  color: rgba(158, 0, 0, 0.98);
+}
+
+.hand-icon {
+  bottom: 55px;
+  right: 72.5px;
+  position: relative;
+  z-index: 1002;
+  margin-left: 10px;
+  animation: hand-animation 1.5s infinite;
+}
+
+@keyframes hand-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .project-icon {
   width: 70px;
   margin-right: 10px;

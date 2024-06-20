@@ -1,10 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faLinkedin,
-  faGithub,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../assets/Footer.css';
 
 function Footer() {
@@ -29,15 +25,6 @@ function Footer() {
         >
           <FontAwesomeIcon icon={faGithub} size="3x" />
         </a>
-        <span className="bg-white-yt">
-          <a
-            href="https://www.youtube.com/watch?v=z2Lv98vh9Og&list=PLImOe1x9FLM2cz53FQ92CQqPUQ0g7UUAF&index=9"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faYoutube} size="3x" />
-          </a>
-        </span>
       </div>
       <p>
         <em>

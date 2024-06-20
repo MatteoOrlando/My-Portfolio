@@ -2,7 +2,6 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import {
   FaReact,
-  FaNodeJs,
   FaGithub,
   FaHtml5,
   FaCss3Alt,
@@ -11,8 +10,11 @@ import {
   FaSass,
   FaJava,
   FaToolbox,
+  FaHandPointRight,
 } from 'react-icons/fa';
 import { SiSpring, SiPostgresql } from 'react-icons/si';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import projectIcon from '../assets/Img/icona-prj-2.webp';
 import image1 from '../assets/screen ok/CAPSTONE/screen-home.png';
 import image2 from '../assets/screen ok/CAPSTONE/screen-sub-home.png';
@@ -221,9 +223,19 @@ function ProjectsComponent() {
 
   return (
     <div className="projects-page-container">
+      <span className="bg-white-yt">
+        <a
+          href="https://www.youtube.com/watch?v=z2Lv98vh9Og&list=PLImOe1x9FLM2cz53FQ92CQqPUQ0g7UUAF&index=9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faYoutube} size="3x" className="pulse2" />
+        </a>{' '}
+        <FaHandPointRight size="2x" className="hand-icon" />
+      </span>
       <span className="project-title-container">
         <img src={projectIcon} alt="Project Icon" className="project-icon" />
-        <h1 className="prj-title">Projects</h1>
+        <h1 className="prj-title">Progetti</h1>
       </span>
       {projects.map((project, idx) => (
         <div key={idx} className="project-carousel-container">
@@ -246,6 +258,7 @@ function ProjectsComponent() {
               </a>
             </div>
           </div>
+
           <Carousel>
             {project.images.map((image, index) => (
               <Carousel.Item key={index}>
@@ -255,7 +268,7 @@ function ProjectsComponent() {
                 ></div>
               </Carousel.Item>
             ))}
-          </Carousel>{' '}
+          </Carousel>
           <hr className="carousel-break-line" />
         </div>
       ))}

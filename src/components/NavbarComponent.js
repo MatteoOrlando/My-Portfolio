@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLaptopCode,
-  faEnvelope,
-  faTools,
   faBars,
   faHome,
 } from '@fortawesome/free-solid-svg-icons';
 import '../assets/NavBar.css';
-import backgroundVideo from '../assets/Img/3129671-uhd_3840_2160_30fps.mp4'; // Assicurati che il percorso del video sia corretto
+import backgroundVideo from '../assets/Img/3129671-uhd_3840_2160_30fps.mp4';
 
 function NavBarComponent() {
   return (
