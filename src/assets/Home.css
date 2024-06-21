@@ -24,12 +24,12 @@
   float: left;
   width: 230px;
   border-radius: 10px;
-  border: 4px solid transparent;
+  border: 4px outset;
   margin-right: 60px;
   margin-bottom: 50px;
   transform: scale(1.4);
   transform-origin: center;
-  animation: borderColorShift 8s infinite linear;
+  animation: borderColorShift 15s infinite linear;
 }
 
 @keyframes borderColorShift {
@@ -102,7 +102,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.262);
+  background: rgba(0, 0, 0, 0.214);
   z-index: 1;
 }
 
@@ -268,10 +268,10 @@
 .project-card::before {
   content: '';
   position: absolute;
-  top: -5px;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 102%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.454);
   border-radius: 25px;
 }
@@ -294,12 +294,12 @@
 .project-card-2::before {
   content: '';
   position: absolute;
-  bottom: 5px;
+  bottom: 1px;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.454);
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 .project-card,
@@ -339,5 +339,201 @@
   }
   100% {
     border-color: #212429;
+  }
+}
+
+.run-animation {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*---------------------RESPONSIVENESS--TABLETS--------------------*/
+@media (max-width: 768px) {
+  .home-container,
+  .container-sub-home {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .intro-section {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .profile-photo {
+    width: 100px;
+    margin: auto;
+    display: block;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .skills-highlights,
+  .latest-projects {
+    margin-top: 20px;
+  }
+
+  .H2-skill,
+  .H2-project {
+    font-size: 18px;
+  }
+
+  .skill-card,
+  .project-card,
+  .project-card-2 {
+    height: auto;
+    width: 100%;
+  }
+
+  .skill-card img,
+  .project-card img,
+  .project-card-2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carosello-home {
+    width: 100%;
+  }
+}
+
+/*---------------------RESPONSIVENESS--SMARTPHONE--------------------*/
+
+@media (max-width: 600px) {
+  .home-container {
+    background: linear-gradient(to bottom, #1c1f25 50%, rgb(68, 75, 91) 100%);
+    padding: 5px;
+    margin-top: 40px;
+  }
+
+  .intro-section {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .profile-photo {
+    width: 95px;
+    margin: auto;
+    display: block;
+    border-radius: 70px 0 62.5px 0;
+  }
+
+  .hello {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-size: 25px;
+  }
+
+  .intro-text p {
+    margin-left: 0;
+    margin-right: -8px;
+    padding-right: 0;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    z-index: 2;
+  }
+
+  /*---------------------------------------*/
+
+  .container-sub-home {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .skills-highlights,
+  .latest-projects {
+    margin-left: 0;
+  }
+
+  .H2-skill {
+    margin-top: 30px;
+    position: relative;
+    font-size: 22px;
+    right: 38px;
+  }
+
+  .carosello-home {
+    margin: 20px auto;
+  }
+
+  .skill-card {
+    width: auto;
+    padding: 7.5px;
+  }
+
+  .H2-project {
+    position: relative;
+    font-size: 22px;
+    margin-top: 70px;
+    right: 30px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-prj h3,
+  .info-prj-2 h3 {
+    margin-left: 40px;
+    font-size: 18px;
+  }
+
+  .animated-border {
+    margin-bottom: 30px;
+    width: 110%;
+    height: 300px;
+  }
+
+  .project-card {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .project-card-2 {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 25px;
+  }
+
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .run-animation {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

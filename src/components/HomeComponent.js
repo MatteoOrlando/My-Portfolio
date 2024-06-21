@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,6 +24,36 @@ import profilePhoto from '../assets/Img/27828-removebg-preview.png';
 import backgroundVideo from '../assets/Img/3129671-uhd_3840_2160_30fps.mp4';
 
 function Home() {
+  /*const projectRef1 = useRef(null);
+  const projectRef2 = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('run-animation');
+          }
+        });
+      },
+      { rootMargin: '0px', threshold: 0.1 }
+    );
+
+    [projectRef1, projectRef2].forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => {
+      [projectRef1, projectRef2].forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+    };
+  }, []);*/
+
   return (
     <div className="home-container">
       <section className="intro-section">
@@ -36,7 +66,7 @@ function Home() {
           className="profile-photo"
         />
         <div className="intro-text">
-          <h1>
+          <h1 className="hello">
             <FontAwesomeIcon icon={faLightbulb} className="animated-icon" />
             Ciao, sono Matteo
           </h1>
@@ -49,19 +79,21 @@ function Home() {
             fantastico, un idea che prende vita e forma, un'esperienza
             gratificante.
             <br />
-            Con un background professionale in un settore completamente diverso
-            da quello del conding e dello sviluppo, ho deciso di fare una svolta
-            coraggiosa. <br />
+            Pur avendo un background professionale formato in un settore
+            completamente diverso da quello del coding e dello sviluppo, ho
+            deciso di fare una svolta coraggiosa. <br />
             Decidendo di investire significativamente nella mia formazione,
             questo percorso mi ha portato a completare un intensivo bootcamp
             della durata di sei mesi presso una nota e-school specializzata nel
             settore, e questo mi ha permesso di immergermi a capofitto nel mondo
-            dello sviluppo e apprezzarne fortemente gli aspetti e le
+            dello sviluppo e apprezzarne fortemente gli aspetti e soprattutto le
             potenzialitá.
             <br />
             Sono motivato ad imparare ogni giorno e ad affrontare con entusiasmo
             le sfide che mi attendono, sperando di unirmi a team dai quali posso
-            continuare ad assorbire e crescere, e dare il mio contributo.
+            continuare ad assorbire conoscenza e crescere professionalmente ed
+            umanamente, e dare il mio contributo al raggiungimento
+            dell'obiettivo
           </p>
         </div>
       </section>
@@ -167,7 +199,7 @@ function Home() {
                 <FontAwesomeIcon icon={faProjectDiagram} /> Last Projects
               </h2>
               <div className="projects-container">
-                <div class="animated-border">
+                <div className="animated-border">
                   <div className="project-card">
                     <span className="info-prj">
                       <h3>
@@ -177,7 +209,7 @@ function Home() {
                     </span>
                   </div>
                 </div>
-                <div class="animated-border">
+                <div className="animated-border">
                   <div className="project-card-2">
                     <span className="info-prj-2">
                       <h3>
