@@ -225,7 +225,7 @@ function ProjectsComponent() {
     <div className="projects-page-container">
       <span className="bg-white-yt">
         <a
-          href="https://www.youtube.com/watch?v=z2Lv98vh9Og&list=PLImOe1x9FLM2cz53FQ92CQqPUQ0g7UUAF&index=9"
+          href="httpswww.youtube.comwatchv=82l0Le8iW0s"
           target="_blank"
           rel="noopener noreferrer"
         >
