@@ -192,7 +192,7 @@ function ProjectsComponent() {
     {
       title: 'E-school homepage',
       description:
-        'Creazione di una pagina per una E-school, utilizzando SASS, il grid system e un layout responsive',
+        'Creazione di una pagina per una E-school, utilizzando SASS, il grid system e un layout responsive.',
       images: [image27, image28, image29],
       technologies: [
         {
@@ -214,7 +214,6 @@ function ProjectsComponent() {
           name: <span style={{ fontStyle: 'italic' }}>SASS</span>,
         },
       ],
-
       repoUrl: 'https://github.com/MatteoOrlando/U-2-W-2-D-4',
     },
 

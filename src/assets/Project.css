@@ -210,11 +210,10 @@
 
 /*-----------------------------------------------*/
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 600px) {
   .projects-page-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 10px;
     background: linear-gradient(to bottom, #1c1f25 50%, rgb(68, 75, 91) 100%);
   }
@@ -222,7 +221,7 @@
   .project-title-container {
     flex-direction: row;
     text-align: center;
-    margin-top: 85px;
+    margin-top: 70px;
     justify-content: center;
   }
 
@@ -239,7 +238,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: auto;
+    margin-bottom: 40px;
   }
 
   .project-page-card {
@@ -253,7 +252,8 @@
   .project-info {
     margin-bottom: 30px !important;
     width: 100%;
-    height: 300px;
+    height: 50%;
+    max-height: 300px;
     padding-bottom: 20px;
   }
 
@@ -265,8 +265,8 @@
   }
 
   .tech-icon {
-    margin-right: 15px;
-    margin-top: -1px;
+    margin-right: 10px;
+    margin-top: -2px;
     margin-bottom: 10px;
     font-size: 12.6px !important;
   }
@@ -281,35 +281,37 @@
   }
 
   .github-icon {
-    margin-top: -22px;
     position: relative;
-    top: 10px;
-    font-size: 45px;
+    z-index: 1001;
+    bottom: 5px;
+    margin-left: 0px;
+    font-size: 2.5rem;
+    color: #ffffffeb;
   }
 
   .bg-white-yt {
-    margin-left: 150px;
+    margin-left: 135px;
     font-size: 20px;
     position: relative;
-    top: 477.5px;
-    left: 155px;
+    top: 482px;
+    left: 45%;
     z-index: 1000;
   }
 
-  .fa-youtube {
-    color: #ff0000;
-    position: relative;
-    top: -50%;
-    font-size: 40px;
-    z-index: 2000;
-  }
-
   .hand-icon {
-    bottom: 50px;
+    bottom: 47px;
     right: 60px;
     position: relative;
     z-index: 1002;
     animation: hand-animation 2.5s infinite;
+  }
+
+  .carousel-break-line {
+    height: 2px;
+    background: linear-gradient(to right, #f6ae43, #eabb7400);
+    border: none;
+    margin: 70px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -371,7 +373,7 @@
   }
 
   .bg-white-yt {
-    top: 83%;
+    top: 24%;
     left: 78%;
     width: 30px;
     height: 30px;

@@ -358,6 +358,7 @@
 }
 
 /*---------------------RESPONSIVENESS--TABLETS--------------------*/
+
 @media (max-width: 768px) {
   .home-container,
   .container-sub-home {
