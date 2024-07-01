@@ -71,8 +71,8 @@ function Home() {
             Ciao, sono Matteo!
           </h1>
           <p>
-            Sono un Junior Full Stack Developer con una passione profonda per la
-            tecnologia, che mi ha guidato a trasformare completamente la mia
+            Sono uno Junior Full Stack Developer con una passione profonda per
+            la tecnologia, che mi ha guidato a trasformare completamente la mia
             carriera attraverso un intensivo bootcamp di sei mesi presso una
             rinomata e-school. Questo percorso ha affinato la mia capacità di
             trasformare le idee in soluzioni concrete, immergendomi
