@@ -18,7 +18,6 @@ import {
   faReact,
   faJava,
 } from '@fortawesome/free-brands-svg-icons';
-
 import '../assets/Home.css';
 import profilePhoto from '../assets/Img/27828-removebg-preview.png';
 import backgroundVideo from '../assets/Img/3129671-uhd_3840_2160_30fps.mp4';
