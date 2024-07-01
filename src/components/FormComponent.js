@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaPaperPlane, FaCommentDots } from 'react-icons/fa';
 import '../assets/Form.css';
 
 function ContactForm() {
@@ -32,8 +33,10 @@ function ContactForm() {
 
   return (
     <section className="contact-form-section">
-      <h2>Contattami</h2>
-      <p>Hai domande o vuoi lavorare insieme? Compila il form qui sotto!</p>
+      <h2>
+        <FaCommentDots /> Contattami
+      </h2>
+      <p>Compila il form qui sotto!</p>
       {submitted ? (
         <p>Grazie per il tuo messaggio, ti risponderò al più presto!</p>
       ) : (
@@ -42,19 +45,27 @@ function ContactForm() {
           method="POST"
           onSubmit={handleSubmit}
         >
-          <input type="text" name="name" placeholder="Il tuo nome" required />
-          <input
-            type="email"
-            name="_replyto"
-            placeholder="La tua email"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Il tuo messaggio"
-            required
-          ></textarea>
-          <button type="submit">Invia Messaggio</button>
+          <div className="input-group">
+            <input type="text" name="name" placeholder="Il tuo nome" required />
+          </div>
+          <div className="input-group">
+            <input
+              type="email"
+              name="_replyto"
+              placeholder="La tua email"
+              required
+            />
+          </div>
+          <div className="input-group">
+            <textarea
+              name="message"
+              placeholder="Il tuo messaggio"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">
+            <FaPaperPlane /> Invia Messaggio
+          </button>
         </form>
       )}
     </section>

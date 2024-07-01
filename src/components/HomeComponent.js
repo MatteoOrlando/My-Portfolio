@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import FormComponent from './FormComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -70,29 +71,19 @@ function Home() {
             Ciao, sono Matteo!
           </h1>
           <p>
-            Sono un Junior Full Stack Developer e la tecnologia mi ha sempre
-            affascinato per la sua capacità di trasformare le idee in realtà
-            concreta.
+            Sono un Junior Full Stack Developer con una passione profonda per la
+            tecnologia, che mi ha guidato a trasformare completamente la mia
+            carriera attraverso un intensivo bootcamp di sei mesi presso una
+            rinomata e-school. Questo percorso ha affinato la mia capacità di
+            trasformare le idee in soluzioni concrete, immergendomi
+            completamente nel mondo dello sviluppo software.
             <br />
-            Ogni argomento e/o progetto nuovo per me, rappresenta uno stimolo
-            fantastico, un idea che prende vita e forma, un'esperienza
-            gratificante.
-            <br />
-            Pur avendo un background professionale formato in un settore
-            completamente diverso da quello del coding e dello sviluppo, ho
-            deciso di fare una svolta coraggiosa. <br />
-            Decidendo di investire significativamente nella mia formazione,
-            questo percorso mi ha portato a completare un intensivo bootcamp
-            della durata di sei mesi presso una nota e-school specializzata nel
-            settore, e questo mi ha permesso di immergermi a capofitto nel mondo
-            dello sviluppo e apprezzarne fortemente gli aspetti e soprattutto le
-            potenzialitá.
-            <br />
-            Sono motivato ad imparare ogni giorno e ad affrontare con entusiasmo
-            le sfide che mi attendono, sperando di unirmi a team dai quali posso
-            continuare ad assorbire conoscenza e crescere professionalmente ed
-            umanamente, e dare il mio contributo al raggiungimento
-            dell'obiettivo.
+            Ogni nuovo progetto è per me fonte di stimolo e crescita. Nonostante
+            provenga da un settore diverso, la mia decisione di cambiare
+            carriera è stata guidata da un desiderio irrefrenabile di apprendere
+            e di eccellere. Sono costantemente alla ricerca di opportunità per
+            apprendere, superare nuove sfide e contribuire attivamente al
+            successo dei team con cui collaboreró.
           </p>
         </div>
       </section>
@@ -223,6 +214,8 @@ function Home() {
           </div>
         </div>
       </div>
+      <hr className="hr-subHome" />
+      <FormComponent />
     </div>
   );
 }

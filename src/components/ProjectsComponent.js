@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Modal, Button } from 'react-bootstrap';
+
 import { Carousel } from 'react-bootstrap';
 import {
   FaReact,
@@ -47,6 +49,15 @@ import image28 from '../assets/screen ok/E-SCHOOL-PAGE/e-school-2.png';
 import image29 from '../assets/screen ok/E-SCHOOL-PAGE/e-school-sass-code.png';
 import '../assets/Project.css';
 function ProjectsComponent() {
+  const [show, setShow] = useState(false);
+  const [activeImage, setActiveImage] = useState('');
+
+  const handleClose = () => setShow(false);
+  const handleShow = (imgUrl) => {
+    setActiveImage(imgUrl);
+    setShow(true);
+  };
+
   const projects = [
     {
       title: 'Capstone Boot Camp',
@@ -260,7 +271,7 @@ function ProjectsComponent() {
 
           <Carousel>
             {project.images.map((image, index) => (
-              <Carousel.Item key={index}>
+              <Carousel.Item key={index} onClick={() => handleShow(image)}>
                 <div
                   className="project-page-card"
                   style={{ backgroundImage: `url(${image})` }}
@@ -271,6 +282,18 @@ function ProjectsComponent() {
           <hr className="carousel-break-line" />
         </div>
       ))}
+      <Modal show={show} onHide={handleClose} size="lg" centered>
+        <Modal.Header closeButton className="my-custom-modal-header">
+          <Modal.Title>Preview</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <img
+            src={activeImage}
+            alt="Enlarged project"
+            style={{ width: '100%' }}
+          />
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }

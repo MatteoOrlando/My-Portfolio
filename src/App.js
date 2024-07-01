@@ -32,7 +32,6 @@ function AppRoutes() {
         <Route path="/home" element={<HomeComponent />} />
         <Route path="/projects" element={<ProjectsComponent />} />
       </Routes>
-      <FormComponent />
       <FooterComponent />
     </>
   );
