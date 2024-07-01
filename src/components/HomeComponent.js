@@ -68,7 +68,7 @@ function Home() {
         <div className="intro-text">
           <h1 className="hello">
             <FontAwesomeIcon icon={faLightbulb} className="animated-icon" />
-            Ciao, sono Matteo
+            Ciao, sono Matteo!
           </h1>
           <p>
             Sono un Junior Full Stack Developer e la tecnologia mi ha sempre
@@ -93,7 +93,7 @@ function Home() {
             le sfide che mi attendono, sperando di unirmi a team dai quali posso
             continuare ad assorbire conoscenza e crescere professionalmente ed
             umanamente, e dare il mio contributo al raggiungimento
-            dell'obiettivo
+            dell'obiettivo.
           </p>
         </div>
       </section>
@@ -106,7 +106,7 @@ function Home() {
               </h2>
               <Carousel
                 className="carosello-home"
-                interval={2500}
+                interval={2000}
                 indicators={true}
                 pause="hover"
               >

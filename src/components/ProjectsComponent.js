@@ -218,7 +218,7 @@ function ProjectsComponent() {
       repoUrl: 'https://github.com/MatteoOrlando/U-2-W-2-D-4',
     },
 
-    //continueró ad ampliarlo//
+    //...//
   ];
 
   return (
@@ -230,7 +230,7 @@ function ProjectsComponent() {
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faYoutube} size="3x" className="pulse2" />
-        </a>{' '}
+        </a>
         <FaHandPointRight size="2x" className="hand-icon" />
       </span>
       <span className="project-title-container">
