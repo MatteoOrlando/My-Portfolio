@@ -133,6 +133,21 @@
   border-radius: 30px;
 }
 
+.project-carousel-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.3s ease-out, transform 0.8s ease-out;
+}
+
+.project-carousel-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-carousel-container + .project-carousel-container {
+  margin-top: 30px;
+}
+
 .carousel .carousel-item {
   max-height: 800px;
   transition: transform 1.5s ease;

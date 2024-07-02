@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { FaPaperPlane, FaCommentDots } from 'react-icons/fa';
 import '../assets/Form.css';
 
 function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-
     const data = new FormData(form);
 
     fetch(form.action, {
@@ -32,11 +36,14 @@ function ContactForm() {
   };
 
   return (
-    <section className="contact-form-section">
+    <section
+      ref={ref}
+      className={`contact-form-section ${inView ? 'fade-in' : ''}`}
+    >
       <h2>
         <FaCommentDots /> Contattami
       </h2>
-      <p>Compila il form qui sotto!</p>
+      <p>Compila il form qui sotto</p>
       {submitted ? (
         <p>Grazie per il tuo messaggio, ti risponderò al più presto!</p>
       ) : (

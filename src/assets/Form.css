@@ -62,6 +62,29 @@ textarea {
   font-weight: 900;
   background-color: #ce9b4e;
 }
+.contact-form-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease-out, transform 0.8s ease-out;
+}
+
+.contact-form-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  animation: pulseAnimation 1s 1s ease-out forwards;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
 
 /*--------------------------------------------*/
 

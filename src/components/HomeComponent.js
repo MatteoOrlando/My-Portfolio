@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+/*import React, { useEffect, useRef } from 'react';*/
 import FormComponent from './FormComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
@@ -71,7 +71,7 @@ function Home() {
             Ciao, sono Matteo!
           </h1>
           <p>
-            Sono uno Junior Full Stack Developer con una passione profonda per
+            Sono uno Junior Full Stack developer con una passione profonda per
             la tecnologia, che mi ha guidato a trasformare completamente la mia
             carriera attraverso un intensivo bootcamp di sei mesi presso una
             rinomata e-school. Questo percorso ha affinato la mia capacità di

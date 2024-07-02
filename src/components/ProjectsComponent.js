@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
-
+import { Modal } from 'react-bootstrap';
+import { useInView } from 'react-intersection-observer';
 import { Carousel } from 'react-bootstrap';
 import {
   FaReact,
@@ -57,6 +57,11 @@ function ProjectsComponent() {
     setActiveImage(imgUrl);
     setShow(true);
   };
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   const projects = [
     {
@@ -247,41 +252,51 @@ function ProjectsComponent() {
         <img src={projectIcon} alt="Project Icon" className="project-icon" />
         <h1 className="prj-title">Progetti</h1>
       </span>
-      {projects.map((project, idx) => (
-        <div key={idx} className="project-carousel-container">
-          <div className="project-info">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="project-technologies">
-              {project.technologies.map((tech, idx) => (
-                <span key={idx} className="tech-icon">
-                  {tech.icon} {tech.name}
-                </span>
-              ))}
-              <a
-                href={project.repoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="github-icon"
-              >
-                <FaGithub className="pulse" />
-              </a>
-            </div>
-          </div>
+      {projects.map((project, idx) => {
+        const { ref, inView } = useInView({
+          triggerOnce: true,
+          threshold: 0.5,
+        });
 
-          <Carousel>
-            {project.images.map((image, index) => (
-              <Carousel.Item key={index} onClick={() => handleShow(image)}>
-                <div
-                  className="project-page-card"
-                  style={{ backgroundImage: `url(${image})` }}
-                ></div>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-          <hr className="carousel-break-line" />
-        </div>
-      ))}
+        return (
+          <div
+            ref={ref}
+            key={idx}
+            className={`project-carousel-container ${inView ? 'fade-in' : ''}`}
+          >
+            <div className="project-info">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="project-technologies">
+                {project.technologies.map((tech, idx) => (
+                  <span key={idx} className="tech-icon">
+                    {tech.icon} {tech.name}
+                  </span>
+                ))}
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="github-icon"
+                >
+                  <FaGithub className="pulse" />
+                </a>
+              </div>
+            </div>
+            <Carousel>
+              {project.images.map((image, index) => (
+                <Carousel.Item key={index} onClick={() => handleShow(image)}>
+                  <div
+                    className="project-page-card"
+                    style={{ backgroundImage: `url(${image})` }}
+                  ></div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+            <hr className="carousel-break-line" />
+          </div>
+        );
+      })}
       <Modal show={show} onHide={handleClose} size="lg" centered>
         <Modal.Header closeButton className="my-custom-modal-header">
           <Modal.Title>Preview</Modal.Title>

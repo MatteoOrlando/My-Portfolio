@@ -184,7 +184,6 @@ body {
     rgba(4, 13, 20, 0.894),
     rgba(6, 19, 29, 0.591)
   );
-
   box-shadow: 0 5px 8px rgb(30, 30, 30);
 }
 
@@ -263,7 +262,7 @@ body {
   position: relative;
   right: 5px;
   margin-bottom: 20px;
-  height: 265px;
+  height: 240px;
   border-radius: 25px;
   background-image: url('../assets/Img/Immagine 2024-06-13 144633.png');
   background-size: 100%;
@@ -289,14 +288,15 @@ body {
   position: relative;
   right: 5px;
   margin-bottom: 20px;
-  height: 100%;
-  border-radius: 33px;
+  height: 240px;
+  border-radius: 20px;
   background-image: url('../assets/Img/Immagine\ 2024-06-14\ 150109.png');
+  background-size: 100%;
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 20px;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
   width: 100%;
 }
 
@@ -314,7 +314,7 @@ body {
 .project-card,
 .project-card-2 {
   margin: 5px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .project-card:hover,
@@ -328,7 +328,7 @@ body {
   position: relative;
   right: 5%;
   width: 450px;
-  height: 275px;
+  height: 252px;
   border: solid 4px #1a1d21;
   animation: border-animation 8s infinite linear;
 }
@@ -373,78 +373,9 @@ body {
   border: none;
   margin: 50px 200px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-/*----------------------------------------------------------------*/
-/*---------------------RESPONSIVENESS--TABLETS--------------------*/
+} /*---------------------RESPONSIVENESS--SMARTPHONE--------------------*/
 
-@media (min-width: 601px) and (max-width: 1025px) {
-  .home-container {
-    padding: 15px;
-    margin-top: 30px;
-  }
-
-  .container-sub-home {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    margin-top: 30px;
-  }
-
-  .intro-section {
-    width: 85%;
-    padding: 25px;
-  }
-
-  .profile-photo {
-    margin-top: 30px;
-    width: 170px;
-    margin-right: 30px;
-    margin-left: 15px;
-    margin-bottom: 17px;
-    transform: scale(1.2);
-  }
-
-  .intro-text {
-    font-size: 20px;
-  }
-
-  .skills-highlights {
-    margin-top: 10px;
-    margin-right: 20px;
-  }
-
-  .carosello-home {
-    width: 100%;
-  }
-
-  .skill-card {
-    width: auto;
-    height: 100px;
-    font-size: 1.5em;
-  }
-
-  .projects-container {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px;
-  }
-
-  .project-card,
-  .project-card-2 {
-    width: 100%;
-  }
-
-  .animated-border {
-    margin-bottom: 30px !important;
-    width: 90%;
-    margin-left: 75px;
-  }
-}
-
-/*---------------------RESPONSIVENESS--SMARTPHONE--------------------*/
-
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .home-container {
     padding: 5px;
     margin-top: 40px;
@@ -566,3 +497,6 @@ body {
     transform: translateY(0);
   }
 }
+
+/*----------------------------------------------------------------*/
+/*---------------------RESPONSIVENESS--TABLETS--------------------*/
