@@ -67,7 +67,7 @@ function ProjectsComponent() {
     {
       title: 'Capstone Boot Camp',
       description:
-        'Game Portal: mini e-commerce con sistema di login/carrello e gestione admin utilizzando Spring Framework/Security.',
+        "Game Portal: mini e-commerce con sistema di login/autenticazione, carrello e gestione admin attraverso l'utilizzo di React e Spring Framework/Security.",
       images: [
         image1,
         image2,
@@ -152,7 +152,7 @@ function ProjectsComponent() {
     {
       title: 'Netflix clone',
       description:
-        'Riproduzione di Netflix nelle sue funzioni basic: Homepage, ricerca genere/film, responsive.',
+        'Riproduzione di Netflix nelle sue funzioni basic: Homepage, ricerca genere/film, responsive; utilizzo delle API.',
       images: [image19, image20, image21, image22],
       technologies: [
         {
@@ -208,7 +208,7 @@ function ProjectsComponent() {
     {
       title: 'E-school homepage',
       description:
-        'Creazione di una pagina per una E-school, utilizzando SASS, il grid system e un layout responsive.',
+        'Creazione di una pagina per una  E-school, utilizzando SASS, il grid system e pratica con layout responsive.',
       images: [image27, image28, image29],
       technologies: [
         {
