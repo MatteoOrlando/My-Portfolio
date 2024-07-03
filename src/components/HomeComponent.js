@@ -96,7 +96,7 @@ function Home() {
               </h2>
               <Carousel
                 className="carosello-home"
-                interval={2000}
+                interval={1500}
                 indicators={true}
                 pause="hover"
               >
