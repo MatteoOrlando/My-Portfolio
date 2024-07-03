@@ -78,12 +78,10 @@ function Home() {
             trasformare le idee in soluzioni concrete, immergendomi
             completamente nel mondo dello sviluppo software.
             <br />
-            Ogni nuovo progetto è per me fonte di stimolo e crescita. Nonostante
-            provenga da un settore diverso, la mia decisione di cambiare
-            carriera è stata guidata da un desiderio irrefrenabile di apprendere
-            e di eccellere. Sono costantemente alla ricerca di opportunità per
-            apprendere, superare nuove sfide e contribuire attivamente al
-            successo dei team con cui collaboreró.
+            Ogni nuovo progetto è per me fonte di stimolo e crescita. Sono
+            costantemente alla ricerca di opportunità per apprendere, superare
+            nuove sfide e contribuire attivamente al successo dei team con cui
+            collaboreró.
           </p>
         </div>
       </section>
