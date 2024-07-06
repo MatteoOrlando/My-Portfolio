@@ -9,7 +9,6 @@ import NavBar from './components/NavbarComponent';
 import HomeComponent from './components/HomeComponent';
 import ProjectsComponent from './components/ProjectsComponent';
 import FooterComponent from './components/FooterComponent';
-import FormComponent from './components/FormComponent';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
